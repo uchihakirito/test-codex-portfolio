@@ -33,11 +33,19 @@ a {
   text-decoration: none;
 }
 
-.hero {
-  min-height: 100vh;
+.hero,
+.page-header {
   display: flex;
   flex-direction: column;
   padding: 1.5rem clamp(1rem, 4vw, 4rem);
+}
+
+.hero {
+  min-height: 100vh;
+}
+
+.page-header {
+  min-height: auto;
 }
 
 .nav {
@@ -82,6 +90,16 @@ a {
   max-width: 780px;
   margin: auto 0;
   padding: 5rem 0;
+}
+
+.page-main {
+  padding-top: 2rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .eyebrow {
@@ -138,6 +156,25 @@ h2 {
 .section {
   width: min(1100px, calc(100% - 2rem));
   margin: 0 auto 5rem;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2rem;
+}
+
+.contact-panel {
+  border-left: 1px solid rgba(217, 173, 105, 0.28);
+  padding-left: 2rem;
+}
+
+.contact-panel a {
+  color: #d9ad69;
+}
+
+.work-grid {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .card,
@@ -209,7 +246,16 @@ footer {
     display: flex;
   }
 
-  .projects {
+  .projects,
+  .work-grid,
+  .about-layout {
     grid-template-columns: 1fr;
+  }
+
+  .contact-panel {
+    border-left: none;
+    border-top: 1px solid rgba(217, 173, 105, 0.28);
+    padding-left: 0;
+    padding-top: 2rem;
   }
 }

@@ -210,6 +210,34 @@ h2 {
   font-size: 1.5rem;
 }
 
+
+.text-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  color: #d9ad69;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.text-link:hover {
+  color: #f7ecd7;
+  transform: translateX(0.25rem);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.skills-list span {
+  border: 1px solid rgba(217, 173, 105, 0.35);
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  color: #f7ecd7;
+  background: rgba(217, 173, 105, 0.08);
+}
+
 .contact {
   text-align: center;
 }
